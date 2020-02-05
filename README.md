@@ -3,13 +3,11 @@
 This library acts as a pre-commit hook configuration updater.
 
 If you include it in your pre-commit hook, the configuration files found within this repo will be downloaded locally.
-Thus if you track these configurations in git, then pre-commit step will fail and force a re-run with the new versions.
+Thus if you track these configurations in git, then the pre-commit step will fail and force a re-run with the new versions.
 
 ## Usage
 
-First make sure `pre-commit` is installed somewhere in your python environment:
-
-    pip install pre-commit
+First make sure `pre-commit` is installed somewhere (https://pre-commit.com/#installation)
 
 To add pre-commit hooks to your repo locally run:
 
