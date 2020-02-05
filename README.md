@@ -1,1 +1,1 @@
-# lib-data-hooks
+# pre-commit-config-updater
