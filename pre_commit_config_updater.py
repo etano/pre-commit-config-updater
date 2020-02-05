@@ -1,9 +1,5 @@
 import argparse
-import logging
 import urllib.request
-
-
-log = logging.getLogger(__name__)
 
 
 def main(argv=None) -> int:
@@ -16,7 +12,7 @@ def main(argv=None) -> int:
     # download most recent configuration files
     configs = [c.split("|") for c in args.configs]
     for src, dst in configs:
-        log.info(f"downloading {dst} from {src}")
+        print(f"downloading {dst} from {src}")
         urllib.request.urlretrieve(src, dst)
 
     return 0
