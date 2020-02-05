@@ -4,16 +4,24 @@ import urllib.request
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--base-url", help="URL for config storage", required=True, dest="base_url", default='https://raw.githubusercontent.com/DoodleScheduling')
+    parser.add_argument(
+        "--base-url",
+        help="URL for config storage",
+        dest="base_url",
+        default="https://raw.githubusercontent.com/DoodleScheduling",
+    )
     parser.add_argument(
         "--configs",
-        help="| separated config files found at `base_url`", required=True, dest="configs", default='.pre-commit-config.yaml|pyproject.toml')
+        help="| separated config files found at `base_url`",
+        dest="configs",
+        default=".pre-commit-config.yaml|pyproject.toml",
+    )
     args = parser.parse_args(argv)
 
     # download most recent configuration files
-    configs = args.configs.split(':')
+    configs = args.configs.split(":")
     for config in configs:
-        urllib.request.urlretrieve(f'{args.base_url}/{config}', config)
+        urllib.request.urlretrieve(f"{args.base_url}/{config}", config)
 
     return 0
 
