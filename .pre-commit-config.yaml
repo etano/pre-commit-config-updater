@@ -3,7 +3,6 @@ repos:
     rev: master
     hooks:
     - id: pre-commit-config-updater
-      args: [--config=https://raw.githubusercontent.com/DoodleScheduling/pre-commit-config-updater/master/.pre-commit-config.yaml|.pre-commit-config.yaml, --config=https://raw.githubusercontent.com/DoodleScheduling/pre-commit-config-updater/master/pyproject.toml|pyproject.toml]
 -   repo: https://github.com/asottile/seed-isort-config
     rev: v1.9.3
     hooks:
