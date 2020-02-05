@@ -9,11 +9,7 @@ log = logging.getLogger(__name__)
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--config",
-        action="append",
-        help="| separated config source and destination",
-        required=True,
-        destination="configs",
+        "--config", action="append", help="| separated config source and destination", required=True, dest="configs",
     )
     args = parser.parse_args(argv)
 
