@@ -14,7 +14,7 @@ def main(argv=None) -> int:
     args = parser.parse_args(argv)
 
     # download most recent configuration files
-    configs = [c.split("|") for c in args.config]
+    configs = [c.split("|") for c in args.configs]
     for src, dst in configs:
         log.info(f"downloading {dst} from {src}")
         urllib.request.urlretrieve(src, dst)
