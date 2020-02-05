@@ -1,0 +1,8 @@
+-   id: pre-commit-config-updater
+    name: pre-commit-config-updater
+    description: Download latest configs for pre-commit
+    entry: pre-commit-config-updater
+    language: python
+    always_run: true
+    pass_filenames: false
+    minimum_pre_commit_version: 0.14.0
