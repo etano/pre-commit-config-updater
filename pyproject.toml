@@ -5,6 +5,7 @@ force_grid_wrap = 0
 use_parantheses = true
 line_length = 120
 lines_after_imports = 2
+known_third_party = []
 
 [tool.black]
 line-length = 120
