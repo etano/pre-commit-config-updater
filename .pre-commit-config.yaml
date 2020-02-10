@@ -27,4 +27,4 @@ repos:
     hooks:
     - id: tartufo
       language: python
-      args: [--pre-commit, --cleanup, --regex]
+      args: [--pre-commit, --cleanup]
