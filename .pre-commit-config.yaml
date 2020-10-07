@@ -4,6 +4,7 @@ repos:
     hooks:
     - id: pre-commit-config-updater
       always_run: true
+      base_url: https://github.com/etano/pre-commit-config-updater/master
 -   repo: https://github.com/asottile/seed-isort-config
     rev: v1.9.3
     hooks:
