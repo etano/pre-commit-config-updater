@@ -1,5 +1,5 @@
 repos:
--   repo: https://github.com/DoodleScheduling/pre-commit-config-updater
+-   repo: https://github.com/etano/pre-commit-config-updater
     rev: master
     hooks:
     - id: pre-commit-config-updater
