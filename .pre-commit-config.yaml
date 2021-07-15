@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/etano/pre-commit-config-updater
-    rev: master
+    rev: v1.0.1
     hooks:
     - id: pre-commit-config-updater
       always_run: true
